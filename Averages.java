@@ -2,18 +2,21 @@
 public class Averages {
 
   public static void main(String[] args){
-    int[] values = { 1, 12, 434, 32, 0, 6, 7, 23, 45, 234};
-    int sum = 0, average;
+    double[] values = { 1, 12, 434, 32, 0, 6, 7, 23, 45, 234};
+    int sum = 0;
+    double average;
 
     System.out.print("The values of the array are: ");
-    for (int x : values) {
+    for (double x : values) {
       sum += x;
       System.out.print(x + " ");
     }
 
     System.out.println();
+    System.out.println("The sum of this array is: " + sum);
+    System.out.println();
 
-    average = sum / values.length;
+    average = (double) sum / values.length;
     System.out.println("The average of these values is: " + average);
   }  
 }
